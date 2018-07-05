@@ -1,0 +1,21 @@
+.site-nav {
+    background: $mainBlue;
+    color: $mainWhite;
+
+    &-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        height: 10vh;
+        align-items: center;
+        font-size: 1.3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+
+        &__item {
+            cursor: pointer;
+        }
+    }
+}
