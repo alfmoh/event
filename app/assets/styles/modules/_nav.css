@@ -1,6 +1,4 @@
 .site-nav {
-    background: $mainBlue;
-    color: $mainWhite;
 
     &-list {
         margin: 0;
@@ -18,4 +16,15 @@
             cursor: pointer;
         }
     }
+
+    /* &::after {
+        content: "";
+    position: absolute;
+    background: png_base64( rgba(255, 66, 78, 0.25) );
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    } */
 }

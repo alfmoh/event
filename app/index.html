@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="temp/styles/styles.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <title>Events</title>
 </head>
 <body>
-    <nav class="site-nav">
+    <nav class="site-nav white--in--blue">
         <ul class="site-nav-list">
             <li class="site-nav-list__item">Home</li>
             <li class="site-nav-list__item">Speakers</li>
@@ -20,19 +20,33 @@
     </nav>
 
     <div class="banner">
+        <!-- <picture>
+            <source srcset="assets/images/conf-large.jpg 1920w, assets/images/conf-large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+            <source srcset="assets/images/conf-medium.jpg 1380w, assets/images/conf-medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+            <source srcset="assets/images/conf-small.jpg 990w, assets/images/conf-small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+            <img srcset="assets/images/conf-smaller.jpg 640w, assets/images/conf-smaller-hi-dpi.jpg 1280w" alt="Conference event" class="banner__image">
+        </picture> -->
         <div class="banner-invite">
-            <p class="banner-invite__ready">
-                Are you ready for this HUGE conference?
-            </p>
-            <ul class="banner-invite__dl">
-                <li class="banner-invite__dl__date">
+            <div class="banner-invite__ready">
+                <span class="banner-invite__ready__que">
+                    Are you ready for this 
+                    <span class="banner-invite__ready__que__huge white--in--blue">HUGE</span> conference?
+                </span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Blanditiis accusantium explicabo animi rem repudiandae quasi deserunt 
+                quibusdam sapiente delectus ullam aperiam ea cumque hic dignissimos at, sequi nam mollitia pariatur!
+            </div>
+            <div class="banner-invite__dl">
+                <span class="banner-invite__dl__date">
                     20th May 2020
-                </li>
-                <li class="banner-invite__dl__location">
+                </span>
+                <span class="banner-invite__dl__location">
                     Accra, Ghana
-                </li>
-            </ul>
-            <button class="banner-invite__register">REGISTER NOW</button>
+                </span>
+            </div>
+            <div class="banner-invite__register">
+                <div class="banner-invite__register__btn white--in--blue">REGISTER NOW</div>
+            </div>
         </div>
     </div>
     

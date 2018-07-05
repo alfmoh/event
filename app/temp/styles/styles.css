@@ -341,9 +341,67 @@ template {
   display: none;
 }
 
-.site-nav {
+.white--in--blue {
     background: #115A90;
     color: #FFF;
+}
+
+@-webkit-keyframes shake {
+    10%, 90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+              transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      -webkit-transform: translate3d(-4px, 0, 0);
+              transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      -webkit-transform: translate3d(4px, 0, 0);
+              transform: translate3d(4px, 0, 0);
+    }
+  }
+
+@keyframes shake {
+    10%, 90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+              transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      -webkit-transform: translate3d(-4px, 0, 0);
+              transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      -webkit-transform: translate3d(4px, 0, 0);
+              transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.site-nav {
+
+    /* &::after {
+        content: "";
+    position: absolute;
+    background: png_base64( rgba(255, 66, 78, 0.25) );
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    } */
 }
 
 .site-nav-list {
@@ -362,3 +420,95 @@ template {
 .site-nav-list__item {
             cursor: pointer;
         }
+
+.banner {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
+                url('/assets/images/conf-large-hi-dpi.jpg');
+    background-size: cover;
+
+    /* &__image {
+        display: block;
+        width: 100%;
+    } */
+    /* &-invite {
+        background: linear-gradient(to right, rgba(64, 127, 196,0.7), rgba(102, 112, 197,0.7));
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    } */
+
+}
+
+.banner-invite {
+        color: #FFF;
+        text-align: center;
+        height: inherit;
+        font-family: "Roboto", sans-serif;
+        /* transform: translateY(30%); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.banner-invite__ready {
+            font-size: 2rem;
+            max-width: 50%;
+            margin: 0 auto;
+            font-weight: 100;
+        }
+
+.banner-invite__ready__que__huge {
+                    padding: 0 5px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 100;
+                    border-radius: 10px;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+.banner-invite__ready__que__huge:hover {
+                        -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                                animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+                        -webkit-transform: translate3d(0, 0, 0);
+                                transform: translate3d(0, 0, 0);
+                        -webkit-backface-visibility: hidden;
+                                backface-visibility: hidden;
+                        -webkit-perspective: 1000px;
+                                perspective: 1000px;
+                    }
+
+.banner-invite__ready__que {
+                display: block;
+                margin-bottom: 25px;
+                font-family: 'Bree Serif', serif;
+            }
+
+.banner-invite__dl {
+            margin: 50px 0;
+        }
+
+.banner-invite__dl__date {
+                border-right: solid;
+                margin-right: 10px;
+                padding-right: 10px;
+            }
+
+.banner-invite__register__btn {
+                font-weight: 300;
+                padding: 10px;
+                cursor: pointer;
+                transition-duration: 0.4s;
+            }
+
+.banner-invite__register__btn:hover {
+                    background-color: #FFF;
+                    color: #115A90;
+                    -webkit-transform: scale(1.07);
+                            transform: scale(1.07);
+                }
