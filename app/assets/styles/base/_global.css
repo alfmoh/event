@@ -3,6 +3,11 @@
     color: $mainWhite;
 }
 
+.section--heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
