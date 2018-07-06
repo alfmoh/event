@@ -346,6 +346,10 @@ template {
     color: #FFF;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 @-webkit-keyframes shake {
     10%, 90% {
       -webkit-transform: translate3d(-1px, 0, 0);
@@ -448,7 +452,6 @@ template {
         color: #FFF;
         text-align: center;
         height: inherit;
-        font-family: "Roboto", sans-serif;
         /* transform: translateY(30%); */
         display: flex;
         flex-direction: column;
@@ -512,3 +515,41 @@ template {
                     -webkit-transform: scale(1.07);
                             transform: scale(1.07);
                 }
+
+.speakers {
+    text-align: center;
+}
+
+.speakers__icon {
+        height: 25px;
+        width: 25px;
+        color: #4285C9;
+        padding-top: 40px;
+    }
+
+.speakers__desc {
+        max-width: 50%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        font-weight: 300;
+    }
+
+.speakers-list {
+        list-style: none;
+        max-width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+.speakers-list__item {
+            padding-bottom: 10px;
+        }
+
+.speakers-list__item__img {
+                border-radius: 50%;
+            }
+
+.speakers-list__item__desc {
+                padding-top: 5px;
+            }

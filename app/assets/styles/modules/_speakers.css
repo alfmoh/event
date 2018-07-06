@@ -1,0 +1,37 @@
+.speakers {
+    text-align: center;
+
+    &__icon {
+        height: 25px;
+        width: 25px;
+        color: $lightBlue;
+        padding-top: 40px;
+    }
+
+    &__desc {
+        max-width: 50%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        font-weight: 300;
+    }
+
+    &-list {
+        list-style: none;
+        max-width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &__item {
+            padding-bottom: 10px;
+
+            &__img {
+                border-radius: 50%;
+            }
+
+            &__desc {
+                padding-top: 5px;
+            }
+        }
+    }
+}
