@@ -1,20 +1,24 @@
 .agenda {
     background: #7F7FD5;
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to left, #91EAE4, #86A8E7, rgb(141, 141, 219));
 
     backdrop-filter: blur(4px);
-
-    height: 40vh;
     
     &-items {
-        display: flex;
+        padding: 40px 0;
+        max-width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 30px;
         align-items: center;
         justify-content: space-evenly;
         height: inherit;
     }
 
     &-item {
-
+        
         &-ds {
             display: grid;
             color: $mainWhite;
@@ -30,7 +34,7 @@
                 font-weight: 500;
                 text-align: center;
                 padding: 0 15px;
-                background: linear-gradient(to right, #2C5364, #203A43, rgb(19, 40, 49));
+                background: linear-gradient(to left, #2C5364, rgb(47, 79, 90), rgb(32, 61, 73));
                 
 
                 &__day {
@@ -61,7 +65,7 @@
 
         &__details {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 4fr 1fr;
             background-color: $mainWhite;
             text-transform: uppercase;
             
