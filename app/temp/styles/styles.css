@@ -400,6 +400,8 @@ body {
   }
 
 .site-nav {
+    position: fixed;
+    width: 100%;
 
     /* &::after {
         content: "";
@@ -433,7 +435,7 @@ body {
 .banner {
     margin: 0;
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
                 url('/assets/images/conf-large-hi-dpi.jpg');
     background-size: cover;
@@ -673,6 +675,12 @@ body {
 
             }
 
+.faq__item {
+    max-width: 70%;
+    margin: 0 auto;
+    
+}
+
 .faq__item__que {
         display: block;
         background-color: #eee;
@@ -683,6 +691,7 @@ body {
         outline: none;
         transition: 0.4s; 
         text-align: center;
+        margin-bottom: 20px;
     }
 
 .faq__item__que:hover {

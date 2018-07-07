@@ -1,5 +1,7 @@
 .faq__item {
-
+    max-width: 70%;
+    margin: 0 auto;
+    
     &__que {
         display: block;
         background-color: #eee;
@@ -10,6 +12,7 @@
         outline: none;
         transition: 0.4s; 
         text-align: center;
+        margin-bottom: 20px;
 
         &:hover {
             background-color: #ccc;

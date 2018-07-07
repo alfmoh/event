@@ -2,6 +2,7 @@ import $ from "jquery";
 
 class Nav {
     constructor() {
+        this.navHome = $("#nav-home");
         this.navAgenda = $("#nav-agenda");
         this.navSpeakers = $("#nav-speakers");
         this.navFaq = $("#nav-faq");
@@ -10,6 +11,7 @@ class Nav {
     }
 
     events() {
+        this.navHome.click(e => this.animator(e.currentTarget.id));
         this.navAgenda.click(e => this.animator(e.currentTarget.id));
         this.navSpeakers.click(e => this.animator(e.currentTarget.id));
         this.navFaq.click(e => this.animator(e.currentTarget.id));
@@ -22,7 +24,7 @@ class Nav {
     }
 
     getClass(id) {
-        return "." + id.slice(id.indexOf("-") + 1, id.length);
+        return "." + id.slice(id.indexOf("-") + 1, id.length) +"-heading";
     }
 
 }

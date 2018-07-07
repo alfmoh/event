@@ -1,4 +1,6 @@
 .site-nav {
+    position: fixed;
+    width: 100%;
     
     &-list {
         margin: 0;
