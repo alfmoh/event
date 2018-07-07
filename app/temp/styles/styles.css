@@ -672,3 +672,72 @@ body {
                 background: linear-gradient(to right, #2C5364, #203A43, rgb(19, 40, 49));
 
             }
+
+.faq__item__que {
+        display: block;
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        outline: none;
+        transition: 0.4s; 
+        text-align: center;
+    }
+
+.faq__item__que:hover {
+            background-color: #ccc;
+        }
+
+.faq__item__ans {
+        padding: 0 18px;
+        overflow: hidden;
+        text-align: center;
+        display:none;
+        max-width: 50%;
+        margin: 20px auto;
+        height: auto;
+        -webkit-animation: fade-in .3s ease-in;
+                animation: fade-in .3s ease-in;
+    }
+
+.faq__item .deactivate {
+        -webkit-animation: fade-out 1s ease-out;
+                animation: fade-out 1s ease-out;
+    }
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
