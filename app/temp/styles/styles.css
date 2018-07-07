@@ -701,11 +701,6 @@ body {
                 animation: fade-in .3s ease-in;
     }
 
-.faq__item .deactivate {
-        -webkit-animation: fade-out 1s ease-out;
-                animation: fade-out 1s ease-out;
-    }
-
 @-webkit-keyframes fade-in {
     from {
         opacity: 0;
@@ -724,20 +719,13 @@ body {
     }
 }
 
-@-webkit-keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.site-footer {
+    height: 10vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
-@keyframes fade-out {
-    from {
-        opacity: 1;
+.site-footer__text {
+        margin: 0 auto;
     }
-    to {
-        opacity: 0;
-    }
-}
