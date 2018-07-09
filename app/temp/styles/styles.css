@@ -410,13 +410,18 @@ body {
         padding: 0;
         display: flex;
         list-style-type: none;
-        justify-content: space-evenly;
+        justify-content: space-between;
         height: 100%;
         align-items: center;
         font-size: 1.3rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
     }
+
+.site-nav-list::before, .site-nav-list::after {
+            content: "";
+            display: block;
+        }
 
 @media (max-width: 544px) {
 
