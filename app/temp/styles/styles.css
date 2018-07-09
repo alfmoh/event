@@ -472,7 +472,6 @@ body {
     background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
                 url('/assets/images/conf-large-hi-dpi.jpg');
     background-size: cover;
-    padding-top: 20vh;
 
     /* &__image {
         display: block;
@@ -488,14 +487,6 @@ body {
     } */
 
 }
-
-@media (min-width: 1225px) {
-
-.banner {
-        padding-top: 0
-
-}
-    }
 
 .banner-invite {
         color: #FFF;
@@ -522,11 +513,11 @@ body {
 @media (min-width : 0) and (max-width : 568px) {
 
 .banner-invite__ready {
-                font-size: 1.2rem
+                font-size: 1.05rem
         }
 
                 .banner-invite__ready__desc {
-                    font-size: 1rem;
+                    font-size: .8rem;
                 }
             }
 
@@ -656,7 +647,8 @@ body {
         max-width: 60%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
         grid-auto-rows: 1fr;
         grid-gap: 30px;
         align-items: center;
@@ -680,7 +672,7 @@ body {
                 font-weight: 500;
                 text-align: center;
                 padding: 0 15px;
-                background: linear-gradient(to left, #2C5364, rgb(47, 79, 90), rgb(32, 61, 73));
+                background: #115A90;
             }
 
 .agenda-item-ds__date__day {
@@ -716,7 +708,7 @@ body {
 
 .agenda-item__details__tt {
                 
-                color: #115A90;
+                color: #232b2b;
             }
 
 .agenda-item__details__tt > span {
@@ -740,8 +732,8 @@ body {
                 align-items: center;
                 justify-content: center;
                 font-weight: 500;
-                color: rgb(240, 229, 217);
-                background: linear-gradient(to right, #2C5364, #203A43, rgb(19, 40, 49));
+                color: #FFF;
+                background: #115A90;
 
             }
 
