@@ -423,7 +423,7 @@ body {
             display: block;
         }
 
-@media (max-width: 544px) {
+@media (min-width : 0) and (max-width : 568px) {
 
 .site-nav-list-open {
                 flex-direction: column
@@ -434,7 +434,7 @@ body {
             display: none;
         }
 
-@media (max-width: 544px) {
+@media (min-width : 0) and (max-width : 568px) {
 
 .site-nav-list-menu {
                 display: block;
@@ -454,7 +454,7 @@ body {
                 text-decoration: underline;
             }
 
-@media (max-width: 544px) {
+@media (min-width : 0) and (max-width : 568px) {
 
 .site-nav-list__item {
                 display: none
@@ -472,6 +472,7 @@ body {
     background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
                 url('/assets/images/conf-large-hi-dpi.jpg');
     background-size: cover;
+    padding-top: 20vh;
 
     /* &__image {
         display: block;
@@ -487,6 +488,14 @@ body {
     } */
 
 }
+
+@media (min-width: 1225px) {
+
+.banner {
+        padding-top: 0
+
+}
+    }
 
 .banner-invite {
         color: #FFF;
@@ -505,6 +514,39 @@ body {
             margin: 0 auto;
             font-weight: 100;
         }
+
+.banner-invite__ready__desc {
+                font-size: 1.5rem;
+            }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.banner-invite__ready {
+                font-size: 1.2rem
+        }
+
+                .banner-invite__ready__desc {
+                    font-size: 1rem;
+                }
+            }
+
+@media (min-width: 569px) and (max-width: 900px) {
+
+.banner-invite__ready {
+                font-size: 1.5rem
+        }
+
+                .banner-invite__ready__desc {
+                    font-size: 1.2rem;
+                }
+            }
+
+.banner-invite__ready__que {
+
+                display: block;
+                margin-bottom: 25px;
+                font-family: 'Bree Serif', serif;
+            }
 
 .banner-invite__ready__que__huge {
                     padding: 0 5px;
@@ -525,12 +567,6 @@ body {
                         -webkit-perspective: 1000px;
                                 perspective: 1000px;
                     }
-
-.banner-invite__ready__que {
-                display: block;
-                margin-bottom: 25px;
-                font-family: 'Bree Serif', serif;
-            }
 
 .banner-invite__dl {
             margin: 50px 0;
