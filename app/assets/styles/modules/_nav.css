@@ -1,6 +1,7 @@
 .site-nav {
     position: fixed;
     width: 100%;
+    padding: 30px 0;
     
     &-list {
         margin: 0;
@@ -8,25 +9,45 @@
         display: flex;
         list-style-type: none;
         justify-content: space-evenly;
-        height: 10vh;
+        height: 100%;
         align-items: center;
         font-size: 1.3rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
+        
+        &-open {
+            @media (--phone) {
+                flex-direction: column;
+            }
+        }
+
+        &-menu {
+            display: none;
+
+            @media (--phone) {
+                display: block;
+                cursor: pointer;
+                padding: 5px;
+                margin-bottom: 5px;
+                border: solid 1px;
+            }
+        }
 
         &__item {
             cursor: pointer;
+            margin: 10px 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @media (--phone) {
+                display: none;
+
+                &-open {
+                    display: block;
+                }
+            }
         }
     }
-
-    /* &::after {
-        content: "";
-    position: absolute;
-    background: png_base64( rgba(255, 66, 78, 0.25) );
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    } */
 }

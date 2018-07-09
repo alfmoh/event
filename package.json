@@ -10,7 +10,8 @@
     "license": "ISC",
     "dependencies": {
         "jquery": "^3.3.1",
-        "normalize.css": "^8.0.0"
+        "normalize.css": "^8.0.0",
+        "postcss-custom-media": "^6.0.0"
     },
     "devDependencies": {
         "autoprefixer": "^8.5.0",
