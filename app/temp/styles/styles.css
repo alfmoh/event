@@ -470,7 +470,7 @@ body {
     padding: 0;
     height: 100vh;
     background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
-                url('/assets/images/conf-large-hi-dpi.jpg');
+                url('../../assets/images/conf-large-hi-dpi.jpg');
     background-size: cover;
 
     /* &__image {
@@ -662,7 +662,7 @@ body {
             grid-template-columns: 1fr 2fr;
             grid-auto-rows: 1fr;
             background: linear-gradient(to right, rgba(64, 127, 196, 0.9), rgba(102, 112, 197, 0.9)), 
-                            url("/assets/images/conf-smaller.jpg");
+                            url("../../assets/images/conf-smaller.jpg");
             background-size: cover;
         }
 
